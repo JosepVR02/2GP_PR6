@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p6_Gallery yeah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Rokkitt:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+            --green: #6D9886;
+            --black: #393E46;
+            --beig: #F2E7D5;
+            --blancobg: #ffffff;
+            --autors:  'PT Sans', sans-serif;
+            --tituls: 'Rokkitt', serif; 
+            --descripció: 'Open Sans', sans-serif;
+            font-style: normal;
+            
+
+        }
+        img{
+            width: 100%;
+        }
+        h1{
+            
+            font-family: var(--autors);
+            color: var(--black);
+            font-weight: 300;
+            font-size: 0.6em;
+            font-weight: 300;
+
+        }
+        h2{
+            font-family: 'Rokkitt', 'serif';
+            color: var(--negro);
+            font-weight: 30px;
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+             p{
+            
+            font-family: var(--descripció);
+            color: var(--negro);
+            font-weight: 40px;
+            font-size: 0,6em;
+
+        }
+            .gallery{
+                padding: 2em;
+                background-color: var(--green);
+                display:flex;
+                flex-wrap: wrap;
+                gap: 1em;
+        }
+            .card{
+            transition: flex-grow 1s;
+            background-color: var(--beig);
+            border-radius: 0.2em;
+            flex-basis: 25%;
+            align-items: center;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:nth-child(1){
+            flex-grow: 1;
+        }
+        .card:nth-child(6){
+            flex-grow: 1;
+        }
+        .card:nth-child(6) img{
+            object-position: top;
+        }
+
+        .card_img{
+            transition: height 1s;
+            width: 100%;
+            height: 270px;
+        }
+        .card-img img{
+            object-fit: cover;
+            height: 100%;
+        }
+        .card:hover{
+            flex-grow: 1;
+            box-shadow: 0.1em 0.1em 0.5em;
+        }
+        .card_img:hover{
+            height: 100%;
+        } 
+    </style>
+</head>
+<body>
+    <main>
+        <div class="gallery">
+            <div class="card 1">
+                <figure class="card_img">
+                    <img src="./img/IMG01.jpeg" alt="G1">
+                </figure>
+                <header class="card_txt">
+                    <h1>Paul Gaugain</h1>
+                    <h2>¿De dónde venimos? ¿Quiénes somos? ¿Adónde vamos?</h2>
+                    <p>La escena es un paisaje tropical lleno de mujeres y niños tahitianos, cada uno de ellos en una actividad diferente y simbólica. A la derecha, un bebé duerme en el suelo rodeado de tres chicas sentadas y un perro. Al fondo, se encuentran dos personajes con túnica y abrazados, caminan mientras hablan y una figura sentada en el suelo los mira en una posición simiesca rascándose la cabeza. En el centro, una figura andrógina coge una fruta. A sus pies, un niño come otra fruta rodeado de gatos y una cabra. Al fondo en la izquierda hay una estatua oriental con los brazos levantados con una mujer a su lado y un embrión humano en el otro. Finalmente, a la izquierda, hay una mujer apoyada sobre su brazo, una vieja sentada en posición fetal tapándose la cara, y un pájaro blanco con una lagartija entre las patas.</p>
+                </header>
+            </div>
+            <div class="card 2">
+                <figure class="card_img">
+                    <img src="./img/IMG02.jpeg" alt="G2">
+                </figure>
+                <header class="card_txt">
+                    <h1>Paul Gaugain</h1>
+                    <h2>¿Cuándo te casas?</h2>
+                    <p>Dos figuras centrales absorben la atención sentadas en el suelo sobre un fondo simplificado con colores planos y vivos. Son dos mujeres tahitianas situadas en diferentes planos. La primera vestida con un pareo de colores tradicionales y una blusa blanca, y tras ella se sienta en el suelo una mujer vestida con un traje de estilo misionero cerrado de color rosa. El gesto de su mano levantada pide atención. El fondo es de diferentes planos de colores vivos e intensos que sugieren el paisaje luminoso tropical. Desde el verde oscuro de la hierba del primer plano, el prado dorado central y el azul lejano de las montañas.</p>
+                </header>
+            </div>
+            <div class="card 3">
+                <figure class="card_img">
+                    <img src="./img/IMG03.jpeg" alt="G3">
+                </figure>
+                <header class="card_txt">
+                    <h1>Paul Gaugain</h1>
+                    <h2>Mujeres de Tahití</h2>
+                    <p>Este cuadro fue realizado por Gauguin durante su segunda estancia en la isla de Tahití. Allí descubrió un tipo femenino distinto al de las mujeres europeas, que reflejó en numerosos cuadros, como este en el que unas mujeres tahitianas se encuentran en la playa. Una de las mujeres, la que queda a la izquierda del cuadro, viste a la manera tradicional, con ornamentación esquemática y plana que recuerda las estampas japonesas. Sin embargo, la de la derecha viste un vestido rosa típico de las misioneras. En una versión posterior del mismo tema sustituyó este vestido por un pareo.</p>
+                </header>
+            </div>
+            <div class="card 4">
+                <figure class="card_img">
+                    <img src="./img/IMG04.jpeg" alt="G4">
+                </figure>
+                <header class="card_txt">
+                    <h1>Paul Gaugain</h1>
+                    <h2>El cristo amarillo</h2>
+                    <p>El cuadro sigue la técnica del cloisonné inspirada en los esmaltes y vidrieras. Grandes zonas de color plano son delimitadas por contornos en azul o negro. Además, es una muestra del fauvismo influenciado por van Gogh donde el elemento primordial es el color. Gauguin llama su estilo como sintetismo ya que sintetiza la observación del sujeto con los sentimientos que provoca el artista. La coloración es típica del otoño bretona. En paralelo con el amarillo de Cristo, se combinan amarillos, naranjas y verdes. La tradición bretona da un significado espiritual en otoño considerándola como una «crucifixión» de los cultivos que resucitan en primavera.</p>
+                </header>
+            </div>
+            <div class="card 5">
+                <figure class="card_img">
+                    <img src="./img/IMG05.jpeg" alt="G5">
+                </figure>
+                <header class="card_txt">
+                    <h1>Paul Gaugain</h1>
+                    <h2>Pechos con flores rojas</h2>
+                    <p>El título original se modificó posteriormente a Dos tahitianas (con flores de mango) (en francés Deux Tahitiannnes (aux fleurs de mango).La chica de la izquierda, que probablemente es Pahura la amante de Gauguin, sostiene un cuenco lleno de flores o frutos rojos no identificados, justo bajo sus pechos desnudos. La chica de la derecha lleva un ramo de flores de mango rosas con la posición de las manos en la actitud reverente oriental. Están derechas, seguras de sí mismas, ocupando el primer plano en una postura natural nada artificiosa. El fondo es completamente abstracto sin motivos decorativos complementarios, realzando así las dos figuras. Sólo el fruto rojo reclama la atención dando fuerte sensualidad.</p>
+                </header>
+            </div>
+            <div class="card 6">
+                <figure class="card_img">
+                    <img src="./img/IMG06.jpeg" alt="G6">
+                </figure>
+                <header class="card_txt">
+                    <h1>Paul Gaugain</h1>
+                    <h2>¿Qué, estás celosa?</h2>
+                    <p>¿Qué, estás celosa? (título original Aha oe feii?, en tahitiano normalizado No te aha 'oe fe'i'i?) es un cuadro de Paul Gauguin hecho en 1892 durante su primera estancia en Tahití. Se conserva en el Museo Pushkin de Moscú. Dos chicas tahitianas están en la playa, un echada y la otra sentada, desnudas y con un pareo extendido al lado. La arena de la playa es lisa, tratada con un color plano, y el mar es sinuoso con colores arbitrarios. La tensión que sugiere el título no se refleja en el cuadro. Las dos chicas están representadas en una actitud contemplativa, de descanso. Gauguin describe la escena en Noa Noa: «A la orilla del mar, a pesar del calor, dos hermanas, que acaban de bañarse, se estiran en graciosas actitudes animales de descanso, y hablan amores de ayer, de mañana. Una pelea: un recuerdo. »- ¿Qué? estás celosa?»</p>
+                </header>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
